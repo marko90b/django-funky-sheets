@@ -325,6 +325,10 @@
       return {
         renderer: "cleanHtmlRenderer"
       };
+    } else if (item[0] == "number") {
+      return {
+        type: "numeric",
+      };
     } else {
       return {};
     }
